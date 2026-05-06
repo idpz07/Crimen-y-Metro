@@ -1,0 +1,7 @@
+=========================================================
+Spatial Analytics: Robberies vs Metro Stations
+=========================================================
+Total robberies analyzed: 148431
+Median distance to nearest Metro: 771.76 meters
+Mean distance to nearest Metro: 1546.62 meters
+Percentage of robberies within 500m of a Metro: 35.3%

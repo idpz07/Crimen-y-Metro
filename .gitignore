@@ -1,0 +1,23 @@
+# Data files
+*.csv
+*.rds
+*.RData
+*.Rhistory
+Data storage/Raw/
+Data storage/Created/
+
+# R/IDE specific
+.Rproj.user/
+.Rapp.history
+.RData
+.Rhistory
+.Rproj.user
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

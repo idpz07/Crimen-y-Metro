@@ -1,0 +1,51 @@
+==============================================================================
+  ANÁLISIS DE SERIES DE TIEMPO INTERRUMPIDO (ITS) — CIERRE LÍNEA 12
+==============================================================================
+
+MODELO: Regresión de Poisson con controles temporales
+  n_asaltos ~ tiempo + Post_Cierre + Post_Cierre*tiempo + factor(Mes)
+  Muestra depurada: Solo estaciones L12 sin transferencias.
+
+
+Call:
+glm(formula = n_asaltos ~ tiempo + Post_Cierre + Post_Cierre:tiempo + 
+    mes_factor, family = poisson(link = "log"), data = df_its)
+
+Coefficients:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)         3.148208   0.139472  22.572  < 2e-16 ***
+tiempo             -0.022232   0.005848  -3.802 0.000144 ***
+Post_Cierre         0.252209   0.450172   0.560 0.575309    
+mes_factor2         0.007018   0.172219   0.041 0.967495    
+mes_factor3         0.086838   0.170007   0.511 0.609498    
+mes_factor4        -0.128659   0.181149  -0.710 0.477557    
+mes_factor5        -0.001773   0.186707  -0.009 0.992424    
+mes_factor6        -0.252154   0.186730  -1.350 0.176899    
+mes_factor7         0.181208   0.167860   1.080 0.280357    
+mes_factor8         0.078291   0.172924   0.453 0.650732    
+mes_factor9        -0.076786   0.181179  -0.424 0.671704    
+mes_factor10       -0.291795   0.194081  -1.503 0.132718    
+mes_factor11        0.112575   0.175609   0.641 0.521485    
+mes_factor12        0.004741   0.182342   0.026 0.979257    
+tiempo:Post_Cierre  0.001883   0.012946   0.145 0.884365    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 72.743  on 46  degrees of freedom
+Residual deviance: 33.559  on 32  degrees of freedom
+AIC: 277.27
+
+Number of Fisher Scoring iterations: 4
+
+
+COEFICIENTES RELEVANTES (tidy)
+# A tibble: 3 × 7
+  term               estimate std.error statistic  p.value conf.low conf.high
+  <chr>                 <dbl>     <dbl>     <dbl>    <dbl>    <dbl>     <dbl>
+1 tiempo             -0.0222    0.00585    -3.80  0.000144  -0.0338   -0.0108
+2 Post_Cierre         0.252     0.450       0.560 0.575     -0.634     1.13  
+3 tiempo:Post_Cierre  0.00188   0.0129      0.145 0.884     -0.0236    0.0272
+
+==============================================================================

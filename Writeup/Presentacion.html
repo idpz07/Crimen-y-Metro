@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Análisis Espacial del Delito a Transeúnte</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef;
+  }
+
+  .slide {
+    background-color: #f8f9fa;
+    width: 960px;
+    min-height: 540px;
+    margin: 0 auto 40px auto;
+    padding: 50px 60px;
+    box-sizing: border-box;
+    page-break-after: always;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+
+  /* ── PORTADA ── */
+  .slide-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 60px 70px;
+  }
+  .slide-cover .cover-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  .slide-cover h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ecf0f1;
+    margin: 0 0 10px 0;
+  }
+  .slide-cover h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #bdc3c7;
+    margin: 0 0 40px 0;
+  }
+  .slide-cover .cover-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+    margin-bottom: 30px;
+  }
+  .slide-cover .cover-meta {
+    font-size: 13px;
+    color: #95a5a6;
+    line-height: 1.8;
+  }
+  .slide-cover .cover-meta strong {
+    color: #bdc3c7;
+  }
+
+  /* ── SLIDES DE CONTENIDO ── */
+  .slide-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0 0 8px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+  }
+
+  /* Layout 2 columnas: texto izquierda, figura derecha */
+  .two-col {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    align-items: flex-start;
+  }
+  .col-text {
+    flex: 0 0 38%;
+  }
+  .col-fig {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-fig img {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+  }
+
+  /* Layout solo texto (sin figura) */
+  .text-only {
+    margin-top: 25px;
+  }
+
+  /* Textos */
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+  }
+  ul {
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+  }
+  ul li {
+    margin-bottom: 6px;
+  }
+
+  /* Callout box */
+  .callout {
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 14px 16px;
+    border-radius: 0 4px 4px 0;
+    margin: 14px 0;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #2c3e50;
+  }
+  .callout strong {
+    display: block;
+    color: #2980b9;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .slide { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     PORTADA
+══════════════════════════════════════ -->
+<div class="slide slide-cover">
+  <div class="cover-tag">Investigación Espacial · CDMX · 2024</div>
+  <h1>Análisis Espacial del Delito a Transeúnte</h1>
+  <h2>La Relación entre la Red del Metro y la Incidencia Criminal en la CDMX</h2>
+  <div class="cover-divider"></div>
+  <div class="cover-meta">
+    <strong>Autor:</strong> Sergio Iván De Pozo Uriza<br>
+    <strong>Fecha:</strong> Abril, 2026<br>
+    <strong>Datos:</strong> 148,431 carpetas de investigación · FGJ CDMX &amp; OpenStreetMap
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 1: Introducción y Marco Teórico
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>1. Introducción y Marco Teórico</h2>
+  <div class="text-only">
+    <p>El diseño de la infraestructura urbana de movilidad concentra diariamente el flujo de millones de personas. Este texto examina cómo dicha convergencia determina la distribución geográfica del delito a transeúnte en la Ciudad de México.</p>
+    <div class="callout">
+      <strong>Hipótesis</strong>
+      La red de transporte público masivo actúa como los principales focos de atracción para la incidencia criminal, un fenómeno ampliamente estudiado en la criminología ambiental (Brantingham &amp; Brantingham, 1993).
+    </div>
+    <p>A partir de un análisis cuantitativo y geoespacial, se evalúa si la proximidad a las estaciones del Metro predice la densidad delictiva, controlando por el flujo peatonal que estas generan.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 2: Metodología y Datos
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>2. Metodología y Procesamiento de Datos</h2>
+  <div class="text-only">
+    <p>A partir de un análisis cuantitativo y geoespacial, se procesaron y cruzaron dos bases de datos:</p>
+    <ul>
+      <li><strong>148,431 Carpetas de Investigación</strong> correspondientes a robos a transeúnte de la Fiscalía General de Justicia (FGJCDMX, 2023).</li>
+      <li><strong>Coordenadas espaciales</strong> de las estaciones del Sistema de Transporte Colectivo (Metro) provenientes de OpenStreetMap (OpenStreetMap Contributors, 2023).</li>
+    </ul>
+    <div class="callout">
+      <strong>Técnica Analítica</strong>
+      Se calculó la distancia euclidiana exacta (en metros) desde cada punto de incidencia delictiva hasta la estación de Metro más cercana, permitiendo un análisis de decaimiento espacial sin sesgos de agregación.
+    </div>
+    <p>Este enfoque elimina el sesgo de escala al trabajar con distancias individuales en lugar de conteos por colonia, y usa datos objetivos de infraestructura en lugar de reportes ciudadanos.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 3: Decaimiento Espacial: Riesgo Acumulado
+     CORRECCIÓN: se eliminó la mediana de aquí.
+     Solo se muestra el 35.3% que sí aparece en la ECDF.
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>3. Decaimiento Espacial: Riesgo Acumulado</h2>
+  <div class="two-col">
+    <div class="col-text">
+      <p>Los indicadores demuestran estadísticamente que el riesgo se incrementa de forma pronunciada en los trayectos directos de acceso y salida de las estaciones:</p>
+      <ul>
+        <li>El <strong>35.3%</strong> de los incidentes se registra en un radio de apenas <strong>500 metros</strong> alrededor de alguna estación.</li>
+      </ul>
+      <div class="callout">
+        <strong>Interpretación</strong>
+        La curva acumula el riesgo de manera pronunciada en los primeros metros: más de un tercio de todos los asaltos a transeúnte de la CDMX ocurre a menos de 500 metros de una estación del Metro.
+      </div>
+    </div>
+    <div class="col-fig">
+      <img src="Figure5_ECDF.png" alt="Riesgo Acumulado ECDF">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 4: Distribución de Frecuencias por Distancia
+     CORRECCIÓN: se movió la mediana a esta slide,
+     donde Figure1_Crime_Decay la marca visualmente.
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>4. Distribución de Frecuencias por Distancia</h2>
+  <div class="two-col">
+    <div class="col-text">
+      <p>Al analizar la frecuencia absoluta de los robos frente a la distancia, observamos el claro "Decaimiento Espacial":</p>
+      <ul>
+        <li>La <strong>mediana</strong> de distancia para cualquier robo respecto a la estación más cercana es de <strong>771.76 metros</strong>.</li>
+        <li>La <strong>media</strong> se ubica en <strong>1,546.62 metros</strong>, reflejando la cola de la distribución.</li>
+      </ul>
+      <div class="callout">
+        <strong>Interpretación</strong>
+        La mayor concentración de delitos se da en los primeros metros de proximidad a las estaciones, cayendo dramáticamente conforme nos alejamos del Metro.
+      </div>
+    </div>
+    <div class="col-fig">
+      <img src="Figure1_Crime_Decay.png" alt="Decaimiento Espacial de Frecuencias">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 5: Tipología del Delito
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>5. Tipología del Delito según la Distancia</h2>
+  <div class="two-col">
+    <div class="col-text">
+      <p>Al segmentar por tipología penal, se identifica una variación operativa en las distancias:</p>
+      <ul>
+        <li><strong>Sin violencia (carterismo):</strong> Mayor densidad a <strong>0 metros</strong>, localizándose en zonas de congestión (torniquetes, andenes, escaleras).</li>
+        <li><strong>Con violencia:</strong> Densidad más alta en un rango de <strong>100 a 300 metros</strong>, donde el flujo continúa pero la concentración de usuarios es menor.</li>
+      </ul>
+      <div class="callout">
+        <strong>Implicación de Política Pública</strong>
+        Las estrategias de seguridad deben diferenciarse: vigilancia dentro del Metro para el carterismo; patrullaje en el radio de 300 m para robos con violencia.
+      </div>
+    </div>
+    <div class="col-fig">
+      <img src="Figure4_Violence_Decay.png" alt="Tipología del Delito">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 6: Mapa de Densidad Criminal
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>6. Mapa de Densidad Criminal</h2>
+  <div class="two-col">
+    <div class="col-text">
+      <p>La visualización espacial de los datos confirma que los clústeres de alta incidencia (<em>hotspots</em>) se alinean geográficamente con el trazado de la red del Metro.</p>
+      <div class="callout">
+        <strong>Hallazgo</strong>
+        La dispersión espacial del crimen no obedece a un comportamiento aleatorio, sino que valida empíricamente el efecto de concentración que ejercen estos nodos de movilidad: el "Efecto Cuello de Botella".
+      </div>
+    </div>
+    <div class="col-fig">
+      <img src="Figure2_Map.png" alt="Mapa de Densidad Criminal">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 7: Conclusión
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>7. Conclusión y Recomendaciones</h2>
+  <div class="text-only">
+    <div class="callout">
+      <strong>Hallazgo Principal</strong>
+      La evidencia demuestra que la incidencia criminal rastrea matemáticamente el volumen peatonal. El "Efecto Cuello de Botella" es estadísticamente verificable y espacialmente robusto.
+    </div>
+    <p>La intersección de las bases de datos de la FGJ y OpenStreetMap proporciona evidencia rigurosa sobre cómo la red del Metro estructura la distribución espacial del crimen a transeúnte en la CDMX.</p>
+    <ul>
+      <li><strong>Recomendación de Política Pública:</strong> Redirigir las estrategias de seguridad para priorizar la contención en los radios inmediatos de los nodos de movilidad masiva.</li>
+      <li>Se debe proteger no solo el interior de las estaciones, sino los trayectos directos de aproximación y salida de los puntos de abordaje.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 8: Referencias
+══════════════════════════════════════ -->
+<div class="slide slide-content">
+  <h2>8. Referencias</h2>
+  <div class="text-only">
+    <ul>
+      <li>Brantingham, P. L., &amp; Brantingham, P. J. (1993). Nodes, paths and edges: Considerations on the complexity of crime and the physical environment. <em>Journal of Environmental Psychology</em>, 13(1), 3–28.</li>
+      <li>Fiscalía General de Justicia de la Ciudad de México [FGJCDMX]. (2023). <em>Carpetas de Investigación</em>. Portal de Datos Abiertos de la Ciudad de México.</li>
+      <li>OpenStreetMap Contributors. (2023). <em>Planet dump</em>. Recuperado de https://planet.osm.org</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
