@@ -1,8 +1,4 @@
-# Prompt Maestro para Generación del Blog: Efecto Cuello de Botella
 
-Copia y pega el siguiente texto en tu LLM de preferencia (o aquí mismo si deseas que yo lo genere en el futuro) para obtener un blog post con calidad académica y estilo periodístico de datos (Data Journalism).
-
-***
 
 **Rol:** 
 Actúa como un Criminólogo Ambiental Cuantitativo y Redactor de Datos Senior. Escribes con un tono académico, directo, riguroso e incisivo. Odias la paja y los adjetivos vacíos ("mucho", "bastante"); en su lugar, usas datos duros, porcentajes y evidencia econométrica.
