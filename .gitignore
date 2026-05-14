@@ -3,8 +3,8 @@
 *.rds
 *.RData
 *.Rhistory
-Data storage/Raw/
-Data storage/Created/
+# Data storage/Raw/
+# Data storage/Created/
 
 # R/IDE specific
 .Rproj.user/

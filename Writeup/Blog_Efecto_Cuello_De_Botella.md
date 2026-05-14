@@ -4,9 +4,7 @@
 
 ***
 
-Caminar por las inmediaciones de una estación del Metro en la Ciudad de México es, para millones de capitalinos, un acto cotidiano que esconde una vulnerabilidad silenciosa. Es sumergirse en una marea humana donde la urgencia de llegar a casa se mezcla con la constante vigilancia del entorno. ¿Por qué, a pesar de ser las arterias que mantienen viva a la ciudad, estas infraestructuras operan también como imanes para el despojo? La respuesta no yace en la casualidad, sino en el diseño urbano. La convergencia masiva de personas no solo facilita la movilidad; también organiza la geografía del delito. Este ensayo explora la hipótesis de que la red de transporte masivo no engendra el crimen de la nada, sino que actúa como un concentrador espacial de oportunidades delictivas, un fenómeno que Brantingham y Brantingham (1993) han conceptualizado dentro de la criminología ambiental.
-
-Para desentrañar esta disonancia entre la necesidad de movilidad y la falencia en la seguridad pública, se procesaron 148,431 carpetas de investigación por robo a transeúnte reportadas por la Fiscalía General de Justicia (FGJCDMX, 2023). Al cruzar estos incidentes con las coordenadas del Sistema de Transporte Colectivo (OpenStreetMap Contributors, 2023), los datos revelan una correlación innegable. La proximidad a estos nodos y la probabilidad de un evento criminal están estructuradas por la misma lógica espacial.
+El presente análisis comprende las carpetas de investigación generadas exclusivamente en el periodo de enero de 2019 a diciembre de 2022. La narrativa del despojo no es estática; rastrea la infraestructura de movilidad más importante de la capital.
 
 ## 1. Patrones de Aglomeración y Distancia
 
@@ -40,11 +38,20 @@ Al evaluar el comportamiento delictivo mediante una regresión de Poisson —con
 
 ¿Qué nos dice esta aparente contradicción? La creencia inicial de que el cierre había pacificado la zona padecía de un grave sesgo analítico por variable omitida. Dicha percepción ignoraba que el robo a transeúnte ya mostraba una tendencia a la baja continua desde años atrás. Nuestro modelo demuestra que la aparente reducción posterior a mayo de 2021 no es un mérito del cierre de las estaciones, sino la simple inercia de una tendencia estructural preexistente. Esta evidencia nos empuja hacia un hallazgo contundente: la movilidad masiva no engendra nuevos delitos a nivel macro. Su verdadera función criminológica es la de un embudo aglutinador. Reorganiza el mapa delictivo de la ciudad al concentrar espacialmente las oportunidades de despojo.
 
-## 4. Conclusión
+## 4. Notas Metodológicas y Limitaciones (Caveats)
+
+Todo análisis empírico debe reconocer sus fronteras. Los hallazgos aquí presentados deben interpretarse bajo las siguientes salvedades:
+
+1. **Rango Temporal:** El análisis comprende datos de enero de 2019 a diciembre de 2022. Este periodo permite capturar la dinámica pre-pandemia, el choque del confinamiento y el experimento natural del cierre de la Línea 12.
+2. **Sesgo de Denuncia (Cifra Negra):** Los datos provienen de carpetas de investigación de la FGJCDMX. Reconocemos que existe un subreporte significativo (cifra negra) de delitos que no llegan a denunciarse. Sin embargo, asumimos que el sesgo es sistemático y no invalida las comparaciones espaciales entre estaciones.
+3. **Endogeneidad de Ubicación:** Existe una correlación intrínseca entre la ubicación del Metro y la densidad urbana. El Metro se construye donde hay gente. Para mitigar este sesgo, el análisis de la Línea 12 utiliza un diseño de Series de Tiempo Interrumpido (ITS) que compara la estación contra sí misma, manteniendo constantes los factores geográficos invariantes y aislando únicamente el choque del flujo peatonal.
+4. **Transparencia en el Uso de IA:** Este trabajo fue desarrollado por Sergio Iván De Pozo Uriza, con la asistencia técnica de la IA Antigravity para el procesamiento de datos y modelos econométricos en R. Adicionalmente, la prosa y el estilo narrativo de este documento fueron generados utilizando el agente especializado definido en `.agents/workflows/academicwriter.md`.
+
+## 5. Conclusión
 
 La intersección de las bases de la FGJCDMX y OpenStreetMap trasciende el ejercicio académico para exponer una falla sistemática en la gestión de nuestra infraestructura. El hecho de que un 35.3% de los asaltos se concentre a menos de 500 metros de una estación —con una mediana de proximidad de 771.76 metros— ilustra que la criminalidad no obedece a fuerzas misteriosas, sino a la aritmética predecible del flujo peatonal. Ignorar esta realidad es apostar por la impunidad. Estos hallazgos exigen al Estado abandonar los despliegues de seguridad reactivos y ciegos, obligando a rediseñar políticas de prevención enfocadas quirúrgicamente en los radios inmediatos de la movilidad masiva. Solo a través de esta precisión analítica lograremos proteger a quienes sostienen, con sus trayectos diarios, el pulso de la metrópoli.
 
-## 5. Referencias
+## 6. Referencias
 
 Brantingham, P. L., & Brantingham, P. J. (1993). Nodes, paths and edges: Considerations on the complexity of crime and the physical environment. *Journal of Environmental Psychology*, 13(1), 3-28.
 

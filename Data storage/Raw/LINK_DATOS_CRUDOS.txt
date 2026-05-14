@@ -1,0 +1,7 @@
+Este repositorio no incluye el archivo original `carpetas_fgj.csv` (Datos de la Fiscalía General de Justicia de la CDMX) debido a que su tamaño (559.8 MB) excede los límites permitidos por GitHub para almacenamiento directo.
+
+Para garantizar la reproducibilidad completa del proyecto (`00_Master.R`), puedes descargar los datos crudos desde el siguiente enlace de la nube:
+
+[PEGA_TU_ENLACE_AQUÍ]
+
+Una vez descargado, coloca el archivo `carpetas_fgj.csv` en esta misma carpeta (`Data storage/Raw/`) antes de ejecutar los scripts.
